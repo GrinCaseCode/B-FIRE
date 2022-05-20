@@ -730,12 +730,12 @@
 		margin-right: 0;
 	}
 	.item-complect__content {
-    flex: 1;
-    align-items: flex-start;
-}
-.footer__nav li a, .footer__title {
-    margin-bottom: 18px;
-    }
+		flex: 1;
+		align-items: flex-start;
+	}
+	.footer__nav li a, .footer__title {
+		margin-bottom: 18px;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -793,7 +793,7 @@
 		padding-top: 80px;
 		width: 325px;
 		min-height: 530px;
-		    margin-bottom: -24px;
+		margin-bottom: -24px;
 	}
 	.item-complect__image {
 		margin-right: 9px;
@@ -843,8 +843,8 @@
 		padding-top: 45px;
 	}
 	.complect .descr-big {
-    margin-bottom: 0;
-}
+		margin-bottom: 0;
+	}
 }
 
 /* Custom, iPhone Retina */
