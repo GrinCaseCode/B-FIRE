@@ -729,6 +729,13 @@
 	.buttons-billbord .btn-main {
 		margin-right: 0;
 	}
+	.item-complect__content {
+    flex: 1;
+    align-items: flex-start;
+}
+.footer__nav li a, .footer__title {
+    margin-bottom: 18px;
+    }
 }
 
 /* Extra Small Devices, Phones */
