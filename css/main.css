@@ -1574,6 +1574,9 @@ line-height: 26px;
 max-width: 492px;
 font-weight: 500;
 }
+.feature-card span {
+	white-space: nowrap;
+}
 .feature-card sup {
 	line-height: 0;
 	top: 3px;
