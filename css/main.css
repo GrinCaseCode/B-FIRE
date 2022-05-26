@@ -1820,6 +1820,7 @@ font-weight: 500;
 	width: 1766px;
 	height: 1766px;
 	pointer-events: none;
+	transform: translate3d(0,0,0);
 	background-image: url(../img/shadow_main.svg);
 	background-repeat: no-repeat;
 	background-position: center;
