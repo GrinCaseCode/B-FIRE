@@ -71,7 +71,7 @@ $(".item-question__head").click(function() {
 			settings: {
 				slidesToShow: 2,
 				arrows: false,
-		dots: true,
+				dots: true,
 			}
 		},
 		{
@@ -79,36 +79,32 @@ $(".item-question__head").click(function() {
 			settings: {
 				slidesToShow: 1,
 				arrows: false,
-		dots: true,
+				dots: true,
 			}
 		}
 		]
 	});
 
 	$('.slider-for').slick({
-		arrows: false,
+		arrows: true,
 		dots: false,
 		infinite: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		asNavFor: '.slider-nav',
 		touchThreshold: 1000,
 		prevArrow: '<div class="slick-prev slick-arrow"><img src="img/prev.svg" alt="alt"><div/>',
 		nextArrow: '<div class="slick-next slick-arrow"><img src="img/next.svg" alt="alt"><div/>',
+		responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				arrows: false,
+				dots: true,
+			}
+		}
+		]
 	});
 
-	$('.slider-nav').slick({
-		arrows: false,
-		dots: false,
-		infinite: true,
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		asNavFor: '.slider-for',
-		touchThreshold: 1000,
-		focusOnSelect: true,
-		prevArrow: '<div class="slick-prev slick-arrow"><img src="img/prev.svg" alt="alt"><div/>',
-		nextArrow: '<div class="slick-next slick-arrow"><img src="img/next.svg" alt="alt"><div/>',
-	});
 
 
 	$(".input-phone").mask("+7 (999) 999-99-99");
@@ -118,6 +114,15 @@ $(".item-question__head").click(function() {
 		$(this).parent().parent().find("li").removeClass('active');
 		$(this).parent().addClass('active');
 		$(".tab-pane").fadeOut(0);
+		var selectTab = $(this).attr("href");
+		$(selectTab).fadeIn(200);
+	}); 
+
+	$('.tabs-catalog li a').click(function(event) {
+		event.preventDefault();
+		$(this).parent().parent().find("li").removeClass('active');
+		$(this).parent().addClass('active');
+		$(".tab-pane-catalog").fadeOut(0);
 		var selectTab = $(this).attr("href");
 		$(selectTab).fadeIn(200);
 	}); 
